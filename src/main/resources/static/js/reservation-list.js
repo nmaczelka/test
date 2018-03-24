@@ -10,6 +10,10 @@
 
 $(document).ready(function() {
 
+	function valami(){
+		console.log("valami")
+	}
+	
   function loadAndDisplayListOfReservations() {
     
     $('.message').hide();
