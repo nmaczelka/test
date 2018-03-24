@@ -9,9 +9,15 @@
   
 
 $(document).ready(function() {
-
-	function valami(){
+function valami(){
 		console.log("valami")
+	}
+	function log(param){
+		console.log(param);
+	}
+	
+	function add(param){
+		console.log(param);
 	}
 	
   function loadAndDisplayListOfReservations() {
