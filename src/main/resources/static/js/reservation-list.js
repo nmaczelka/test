@@ -20,6 +20,10 @@ function valami(){
 		console.log(param);
 	}
 	
+	function dora(){
+		console.log("Szeretlek");
+	}
+	
   function loadAndDisplayListOfReservations() {
     
     $('.message').hide();
