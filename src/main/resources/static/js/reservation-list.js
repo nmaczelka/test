@@ -24,6 +24,9 @@ function valami(){
 		console.log("Szeretlek");
 	}
 	
+	function remove(){
+	}
+	
   function loadAndDisplayListOfReservations() {
     
     $('.message').hide();
