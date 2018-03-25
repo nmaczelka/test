@@ -22,6 +22,7 @@ function valami(){
 	
 	function dora(){
 		console.log("Szeretlek");
+		console.log("Szeretlek2");
 	}
 	
   function loadAndDisplayListOfReservations() {
