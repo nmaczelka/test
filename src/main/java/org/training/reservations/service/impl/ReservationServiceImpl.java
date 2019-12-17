@@ -35,7 +35,7 @@ public class ReservationServiceImpl implements ReservationService {
         assertFromToDateOrder(from, to);
 
         Long overlaps = reservationRepository.countNumberOfOverlapingReservationsOfPeriod(resourceId, from, to);
-
+	System.out.println("center");
         if (overlaps == 0) {
             org.training.reservations.model.Reservation r = new Reservation();
             r.setResourceId(resourceId);
@@ -51,6 +51,7 @@ public class ReservationServiceImpl implements ReservationService {
             throw new ResourceUnavailableException("Resource already reserved for the time period");
         }
 
+	System.out.println("after");
     }
 
     private void assertFromToDateOrder(Date from, Date to) throws ReservationDateOrderException {
