@@ -31,7 +31,7 @@ public class ReservationServiceImpl implements ReservationService {
         throws ReservationException {
 
         logger.debug("Reservation attempt for {}, from:{}, to:{}, initiated-by:{}", resourceId, from, to, owner);
-
+	System.out.println("before");
         assertFromToDateOrder(from, to);
 
         Long overlaps = reservationRepository.countNumberOfOverlapingReservationsOfPeriod(resourceId, from, to);
